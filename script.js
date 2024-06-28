@@ -7,8 +7,8 @@ function updateClockHands() {
   const seconds = now.getSeconds();
 
   // Calculate rotation angles for each hand
-  const hourRotation = (360 / 12) * (hours + parseInt(minutes / 60) + parseInt(seconds / 3600));
-  const minuteRotation = (360 / 60) * (minutes + (seconds / 60));
+  const hourRotation = (360 / 12) * (hours + minutes / 60);
+  const minuteRotation = (360 / 60) * (minutes + seconds / 60);
   const secondRotation = (360 / 60) * seconds;
 
   // Select clock hands
