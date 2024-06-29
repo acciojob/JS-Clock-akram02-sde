@@ -17,9 +17,9 @@ function updateClockHands() {
   const secondHand = document.querySelector('.second-hand');
 
   // Apply rotations to clock hands
-  hourHand.style.transform = `rotate(${hourRotation}deg)`;
-  minuteHand.style.transform = `rotate(${minuteRotation}deg)`;
-  secondHand.style.transform = `rotate(${secondRotation}deg)`;
+  hourHand.style.transform = `rotate(${hourRotation + 90}deg)`;
+  minuteHand.style.transform = `rotate(${minuteRotation + 90}deg)`;
+  secondHand.style.transform = `rotate(${secondRotation + 90}deg)`;
 }
 
 // Update clock hands every second
