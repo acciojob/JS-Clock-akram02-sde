@@ -2,7 +2,7 @@
 function updateClockHands() {
   const now = new Date();
 
-  const hours = now.getHours() % 12; // Convert to 12-hour format
+  const hours = now.getHours();
   const minutes = now.getMinutes();
   const seconds = now.getSeconds();
 
